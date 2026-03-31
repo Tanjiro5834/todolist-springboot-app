@@ -33,7 +33,7 @@ This project combines a polished frontend experience with a structured backend a
 - Thymeleaf
 - HTML
 - CSS
-- Vanilla JavaScript
+- JavaScript
 
 ### Database
 - MySQL
