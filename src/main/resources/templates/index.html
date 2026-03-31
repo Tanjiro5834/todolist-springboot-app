@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Do — Task List</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" th:href="@{/styles.css}">
+</head>
+<body>
+
+<div class="app">
+
+  <header class="header">
+    <div>
+      <div class="logo"><span>D</span>o.</div>
+      <div class="tagline">Keep it simple</div>
+    </div>
+    <button class="theme-btn" id="theme-toggle" aria-label="Toggle theme">
+      <span class="theme-icon">☀️ 🌙</span>
+    </button>
+  </header>
+
+  <div class="add-card">
+    <input type="text" id="input-title" class="field-title" placeholder="Task title" maxlength="80" autocomplete="off"/>
+    <div class="divider"></div>
+    <textarea id="input-desc" class="field-desc" placeholder="Description… (optional)" maxlength="300" rows="2"></textarea>
+    <div class="add-footer">
+      <div class="priority-group" id="priority-group">
+        <button class="p-pill" data-priority="HIGH">High</button>
+        <button class="p-pill" data-priority="MEDIUM">Med</button>
+        <button class="p-pill sel" data-priority="LOW">Low</button>
+      </div>
+      <button class="add-btn" id="add-btn">Add task</button>
+    </div>
+  </div>
+
+  <div class="list-wrap">
+    <div class="empty" id="empty-state">
+      <div class="empty-icon">✦</div>
+      <div class="empty-text">Nothing here yet.</div>
+    </div>
+    <div id="task-list"></div>
+  </div>
+
+</div>
+
+<!-- Toast -->
+<div class="toast" id="toast"></div>
+
+<script th:src="@{/script.js}"></script>
+
+</body>
+</html>
