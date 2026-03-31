@@ -1,6 +1,5 @@
 /mvnw text eol=lf
 *.cmd text eol=crlf
 
-*.css linguist-detectable=false
-*.js linguist-detectable=false
-*.html linguist-detectable=false
+src/main/resources/static/*.css linguist-detectable=false
+src/main/resources/static/*.js linguist-detectable=false
