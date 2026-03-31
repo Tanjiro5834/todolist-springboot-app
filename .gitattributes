@@ -2,4 +2,3 @@
 *.cmd text eol=crlf
 
 src/main/resources/static/*.css linguist-detectable=false
-src/main/resources/static/*.js linguist-detectable=false
